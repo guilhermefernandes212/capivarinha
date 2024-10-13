@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria com Capivaras e Música Automática</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
+</head>
+
+<body>
+
+    <h1>Fotos Nossa</h1>
+    
+    <div class="galeria">
+        <img src="fotos/IMG-20240726-WA0017.jpg" alt="Paisagem com capivaras - Foto 1" onclick="openModal(this)">
+        <img src="fotos/IMG_20241009_192641550.jpg" alt="Paisagem com pôr do sol - Foto 2" onclick="openModal(this)">
+        <img src="fotos/IMG-20240915-WA0025.jpeg" alt="Paisagem com lago - Foto 3" onclick="openModal(this)">
+        <img src="fotos/IMG-20240726-WA0032.jpeg" alt="Capivara - Foto 4" onclick="openModal(this)">
+        <img src="fotos/IMG-20241009-WA0074.jpeg" alt="Capivara - Foto 5" onclick="openModal(this)">
+        <img src="fotos/IMG_20240803_210507716.jpg" alt="Capivara - Foto 6" onclick="openModal(this)">
+        <img src="fotos/IMG_20240803_210516869.jpg" alt="Capivara - Foto 6" onclick="openModal(this)">
+        <img src="fotos/IMG-20241003-WA0010.jpg" alt="Capivara - Foto 6" onclick="openModal(this)">
+        <img src="fotos/amommuito.jpg" alt="Capivara - Foto 6" onclick="openModal(this)">
+        <img src="fotos/IMG-20240405-WA0013.jpg" alt="Capivara - Foto 6" onclick="openModal(this)">
+        <img src="fotos/IMG-20231001-WA0096.jpeg" alt="Capivara - Foto 6" onclick="openModal(this)">
+        <img src="fotos/20231022_205732.jpg" alt="Capivara - Foto 6" onclick="openModal(this)">
+        <img src="fotos/20240523_235547.jpg" alt="Capivara - Foto 6" onclick="openModal(this)">
+        <img src="fotos/iruu.jpg" alt="Capivara - Foto 6" onclick="openModal(this)">
+        <img src="fotos/IMG-20241009-WA0077.jpeg" alt="Capivara - Foto 6" onclick="openModal(this)">
+    </div>
+
+    <!-- Mensagem de Gratidão -->
+    <div class="mensagem">
+        <p>Querida Emily,</p>
+        <p>Quero que saiba o quanto sou grato por você. Você trouxe luz à minha vida, e eu só quero passar o resto dos meus dias ao seu lado. Amo você profundamente e desejo compartilhar cada momento com você, construindo uma vida juntos, cheia de amor, felicidade e carinho.</p>
+        <p>Com todo o meu amor,</p>
+        <p>Seu Amor Guilherme!!!</p>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="">
+    </div>
+
+    <!-- Audio com Reprodução Automática -->
+    <audio id="musica" autoplay>
+        <source src="Tyler, The Creator - See You Again ft. Kali Uchis (Lyrics).mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <!-- Botão de controle da música fixo no rodapé -->
+    <button class="btn-musica" onclick="toggleMusica()">Pausar Música</button>
+
+    <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
+</body>
+</html>
